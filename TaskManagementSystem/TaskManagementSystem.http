@@ -1,0 +1,21 @@
+@TaskManagementSystem_HostAddress = https://localhost:7081
+
+GET {{TaskManagementSystem_HostAddress}}/api/tasks
+
+### работает
+
+POST {{TaskManagementSystem_HostAddress}}/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Разработать API",
+    "description": "Создать веб-API для системы задач"
+}
+### работает
+
+@id=3
+DELETE {{TaskManagementSystem_HostAddress}}/api/tasks/{{id}}
+
+### работает
+
+
